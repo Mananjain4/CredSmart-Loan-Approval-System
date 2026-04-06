@@ -56,26 +56,29 @@ html, body, [class*="css"] {
 [data-testid="stSidebar"] * { color: var(--text) !important; }
 
 /* Hide default streamlit elements */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
+header { visibility: visible !important; }
 
-/* Force sidebar always visible */
-[data-testid="stSidebar"] {
-    transform: none !important;
-    width: 300px !important;
-    min-width: 300px !important;
-}
 
-/* Fix sidebar toggle button - always visible */
+/* Sidebar toggle button FIX */
 [data-testid="collapsedControl"],
 [data-testid="stSidebarCollapsedControl"] {
+    position: fixed !important;
+    top: 80px !important;
+    left: 0px !important;
+    z-index: 10000 !important;
+
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
-    color: white !important;
+
     background: #6c63ff !important;
+    color: white !important;
     border-radius: 0 8px 8px 0 !important;
-    z-index: 999 !important;
+    padding: 6px !important;
+    cursor: pointer !important;
 }
+
 
 /* Main heading */
 .hero-title {
