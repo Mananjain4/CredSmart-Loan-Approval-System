@@ -21,7 +21,7 @@
 
 ## 🎯 Project Overview
 
-CreditWise is a complete ML pipeline that takes raw loan application data, processes and engineers features, trains multiple classification models, and serves predictions through a polished interactive web interface.
+CredSmart is a complete ML pipeline that takes raw loan application data, processes and engineers features, trains multiple classification models, and serves predictions through a polished interactive web interface.
 
 The system evaluates applicants across 28 engineered features and outputs an approval decision with a probability score, helping understand the key factors driving the result.
 
